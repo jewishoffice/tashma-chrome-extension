@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Tashma Linker",
+  "description": "התוסף מזהה הפניות למקורות תורניים בדפי אינטרנט והופך אותן לקישורים חיים המובילים לאתר 'תא שמע'.",
+  "version": "1.4.1",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
